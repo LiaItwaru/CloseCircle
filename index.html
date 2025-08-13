@@ -27,8 +27,14 @@
                 <a href="#" class="nav-link" data-section="connections">
                     <i class="fas fa-users"></i> Connections
                 </a>
+                <a href="#" class="nav-link" data-section="leads">
+                    <i class="fas fa-chart-line"></i> Leads
+                </a>
                 <a href="#" class="nav-link" data-section="profile">
                     <i class="fas fa-user"></i> Profile
+                </a>
+                <a href="#" class="nav-link" data-section="opencircle">
+                    <i class="fas fa-circle-notch"></i> Open Circle
                 </a>
                 <a href="#" class="nav-link" data-section="messages">
                     <i class="fas fa-envelope"></i> Messages
@@ -43,6 +49,212 @@
 
     <!-- Main Content -->
     <main class="main-content">
+
+        <!-- Welcome/Landing Page -->
+        <section id="welcomeSection" class="content-section active">
+            <div class="welcome-container">
+                <div class="welcome-hero">
+                    <div class="hero-content">
+                        <div class="hero-logo">
+                            <div class="logo-container large">
+                                <i class="fas fa-circle logo-circle"></i>
+                                <i class="fas fa-key logo-key"></i>
+                            </div>
+                            <h1>Close Circle</h1>
+                        </div>
+                        <h2>The Professional Network for Real Estate</h2>
+                        <p class="hero-description">
+                            Connect with licensed Mortgage Loan Officers and Realtors.
+                            Build your professional network, share industry insights, and grow your business together.
+                        </p>
+                        <div class="hero-actions">
+                            <button class="btn-primary large" id="heroSignupBtn">
+                                <i class="fas fa-user-plus"></i> Join Close Circle
+                            </button>
+                            <button class="btn-secondary large" id="heroLoginBtn">
+                                <i class="fas fa-sign-in-alt"></i> Sign In
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="feature-preview">
+                            <div class="preview-card">
+                                <div class="preview-header">
+                                    <div class="preview-avatar">SJ</div>
+                                    <div>
+                                        <h4>Sarah Johnson</h4>
+                                        <p>Licensed Realtor</p>
+                                    </div>
+                                </div>
+                                <p>Just closed on a beautiful family home! Another happy family gets their dream home.
+                                    🏡</p>
+                                <div class="preview-actions">
+                                    <span><i class="fas fa-heart"></i> 12</span>
+                                    <span><i class="fas fa-comment"></i> 3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="welcome-features">
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Professional Networking</h3>
+                            <p>Connect with verified MLOs and Realtors in your area. Build meaningful professional
+                                relationships.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h3>License Verification</h3>
+                            <p>All members are verified professionals with valid NMLS IDs or state real estate licenses.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3>Industry Insights</h3>
+                            <p>Share market updates, success stories, and professional insights with your network.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3>Business Growth</h3>
+                            <p>Collaborate on deals, share referrals, and grow your business through professional
+                                connections.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="welcome-cta">
+                    <div class="cta-content">
+                        <h2>Ready to Expand Your Professional Network?</h2>
+                        <p>Join thousands of real estate professionals already connecting on Close Circle</p>
+                        <div class="cta-stats">
+                            <div class="stat">
+                                <span class="stat-number">2,500+</span>
+                                <span class="stat-label">Licensed Professionals</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">15,000+</span>
+                                <span class="stat-label">Connections Made</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Daily Interactions</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary large" id="ctaSignupBtn">
+                            Get Started Today
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Buyer/Borrower Inquiry Section -->
+                <div class="buyer-inquiry-section">
+                    <div class="inquiry-content">
+                        <h2>Need Help with Your Home Purchase?</h2>
+                        <p>Connect with licensed professionals who can guide you through your home buying journey</p>
+                        <div class="inquiry-features">
+                            <div class="inquiry-feature">
+                                <i class="fas fa-home"></i>
+                                <span>Find Your Dream Home</span>
+                            </div>
+                            <div class="inquiry-feature">
+                                <i class="fas fa-calculator"></i>
+                                <span>Get Pre-Approved</span>
+                            </div>
+                            <div class="inquiry-feature">
+                                <i class="fas fa-handshake"></i>
+                                <span>Expert Guidance</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary large" id="buyerInquiryBtn">
+                            <i class="fas fa-question-circle"></i> Submit Inquiry
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Buyer Inquiry Modal -->
+        <div id="buyerInquiryModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Submit Your Home Buying Inquiry</h2>
+                <form id="buyerInquiryForm">
+                    <div class="form-group">
+                        <label for="buyerName">Full Name *</label>
+                        <input type="text" id="buyerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="buyerEmail">Email Address *</label>
+                        <input type="email" id="buyerEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="buyerPhone">Phone Number</label>
+                        <input type="tel" id="buyerPhone" placeholder="(555) 123-4567">
+                    </div>
+                    <div class="form-group">
+                        <label for="buyerLocation">Preferred Location *</label>
+                        <input type="text" id="buyerLocation" placeholder="City, State" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="buyerBudget">Budget Range *</label>
+                        <select id="buyerBudget" required>
+                            <option value="">Select budget range</option>
+                            <option value="under-200k">Under $200,000</option>
+                            <option value="200k-400k">$200,000 - $400,000</option>
+                            <option value="400k-600k">$400,000 - $600,000</option>
+                            <option value="600k-800k">$600,000 - $800,000</option>
+                            <option value="800k-1m">$800,000 - $1,000,000</option>
+                            <option value="over-1m">Over $1,000,000</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="buyerTimeframe">Timeline *</label>
+                        <select id="buyerTimeframe" required>
+                            <option value="">When are you looking to buy?</option>
+                            <option value="immediately">Immediately</option>
+                            <option value="1-3months">1-3 months</option>
+                            <option value="3-6months">3-6 months</option>
+                            <option value="6-12months">6-12 months</option>
+                            <option value="over-1year">Over 1 year</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="buyerNeeds">What do you need help with? *</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" id="needRealtor" value="realtor">
+                                <span>Finding a Realtor</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" id="needMLO" value="mlo">
+                                <span>Mortgage Pre-approval</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" id="needBoth" value="both">
+                                <span>Both Realtor and MLO</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="buyerMessage">Additional Details</label>
+                        <textarea id="buyerMessage" rows="3"
+                            placeholder="Tell us more about what you're looking for..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
         <!-- Login Modal -->
         <div id="loginModal" class="modal">
             <div class="modal-content">
@@ -137,8 +349,100 @@
             </div>
         </div>
 
+        <!-- Edit Profile Modal -->
+        <div id="editProfileModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Edit Profile</h2>
+                <form id="editProfileForm">
+                    <div class="form-group">
+                        <label for="editFullName">Full Name *</label>
+                        <input type="text" id="editFullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editEmail">Email Address *</label>
+                        <input type="email" id="editEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editRole">Professional Role</label>
+                        <select id="editRole" disabled>
+                            <option value="mlo">Mortgage Loan Officer (MLO)</option>
+                            <option value="realtor">Realtor</option>
+                        </select>
+                        <small>Role cannot be changed after account creation</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="editAbout">About</label>
+                        <textarea id="editAbout" rows="4" placeholder="Tell your network about yourself..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="editCompany">Company/Brokerage</label>
+                        <input type="text" id="editCompany" placeholder="Your company or brokerage name">
+                    </div>
+                    <div class="form-group">
+                        <label for="editLocation">Location</label>
+                        <input type="text" id="editLocation" placeholder="City, State">
+                    </div>
+                    <div class="form-group">
+                        <label for="editPhone">Phone Number</label>
+                        <input type="tel" id="editPhone" placeholder="(555) 123-4567">
+                    </div>
+                    <div class="form-group">
+                        <label for="editWebsite">Website</label>
+                        <input type="url" id="editWebsite" placeholder="https://yourwebsite.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="editExperience">Years of Experience</label>
+                        <select id="editExperience">
+                            <option value="">Select experience level</option>
+                            <option value="0-2">0-2 years</option>
+                            <option value="3-5">3-5 years</option>
+                            <option value="6-10">6-10 years</option>
+                            <option value="11-15">11-15 years</option>
+                            <option value="16+">16+ years</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="editSpecialties">Specialties</label>
+                        <input type="text" id="editSpecialties"
+                            placeholder="e.g., First-time buyers, Luxury homes, Commercial">
+                        <small>Separate multiple specialties with commas</small>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary" id="cancelEditProfile">Cancel</button>
+                        <button type="submit" class="btn-primary">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Comments Modal -->
+        <div id="commentsModal" class="modal">
+            <div class="modal-content comments-modal">
+                <span class="close">&times;</span>
+                <div class="comments-header">
+                    <h2>Comments</h2>
+                    <div class="post-preview" id="commentPostPreview">
+                        <!-- Post preview will be loaded here -->
+                    </div>
+                </div>
+                <div class="comments-container" id="commentsContainer">
+                    <!-- Comments will be loaded here -->
+                </div>
+                <div class="comment-input-area">
+                    <div class="comment-input-container">
+                        <div class="user-avatar small" id="commentUserAvatar">U</div>
+                        <input type="text" id="commentInput" placeholder="Write a comment..." />
+                        <button class="btn-primary" id="addCommentBtn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Feed Section -->
-        <section id="feedSection" class="content-section active">
+        <section id="feedSection" class="content-section">
             <div class="container">
                 <div class="feed-layout">
                     <!-- Left Sidebar -->
@@ -210,6 +514,239 @@
             </div>
         </section>
 
+        <!-- Leads Section -->
+        <section id="leadsSection" class="content-section">
+            <div class="container">
+                <div class="leads-header">
+                    <h2>Lead Management</h2>
+                    <button class="btn-primary" id="addLeadBtn">
+                        <i class="fas fa-plus"></i> Add New Lead
+                    </button>
+                </div>
+
+                <div class="leads-dashboard">
+                    <!-- Lead Statistics -->
+                    <div class="leads-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" id="totalLeads">0</span>
+                                <span class="stat-label">Total Leads</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon active">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" id="activeLeads">0</span>
+                                <span class="stat-label">Active Leads</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon closed">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" id="closedLeads">0</span>
+                                <span class="stat-label">Closed Deals</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon revenue">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" id="totalRevenue">$0</span>
+                                <span class="stat-label">Total Revenue</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lead Filters -->
+                    <div class="leads-filters">
+                        <div class="filter-group">
+                            <label for="statusFilter">Status:</label>
+                            <select id="statusFilter">
+                                <option value="all">All Leads</option>
+                                <option value="new">New</option>
+                                <option value="contacted">Contacted</option>
+                                <option value="qualified">Qualified</option>
+                                <option value="proposal">Proposal Sent</option>
+                                <option value="negotiation">In Negotiation</option>
+                                <option value="closed">Closed</option>
+                                <option value="lost">Lost</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="sourceFilter">Source:</label>
+                            <select id="sourceFilter">
+                                <option value="all">All Sources</option>
+                                <option value="opencircle">Open Circle</option>
+                                <option value="referral">Referral</option>
+                                <option value="website">Website</option>
+                                <option value="social">Social Media</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <input type="text" id="searchLeads" placeholder="Search leads...">
+                        </div>
+                    </div>
+
+                    <!-- Leads Table -->
+                    <div class="leads-table-container">
+                        <table class="leads-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Contact</th>
+                                    <th>Status</th>
+                                    <th>Source</th>
+                                    <th>Value</th>
+                                    <th>Last Contact</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="leadsTableBody">
+                                <!-- Leads will be populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add Lead Modal -->
+        <div id="addLeadModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Add New Lead</h2>
+                <form id="addLeadForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="leadName">Full Name *</label>
+                            <input type="text" id="leadName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="leadEmail">Email *</label>
+                            <input type="email" id="leadEmail" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="leadPhone">Phone Number</label>
+                            <input type="tel" id="leadPhone" placeholder="(555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="leadSource">Lead Source *</label>
+                            <select id="leadSource" required>
+                                <option value="">Select source</option>
+                                <option value="opencircle">Open Circle</option>
+                                <option value="referral">Referral</option>
+                                <option value="website">Website</option>
+                                <option value="social">Social Media</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="leadBudget">Budget/Property Value</label>
+                            <input type="number" id="leadBudget" placeholder="400000">
+                        </div>
+                        <div class="form-group">
+                            <label for="leadStatus">Initial Status</label>
+                            <select id="leadStatus">
+                                <option value="new">New</option>
+                                <option value="contacted">Contacted</option>
+                                <option value="qualified">Qualified</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="leadLocation">Location/Area of Interest</label>
+                        <input type="text" id="leadLocation" placeholder="City, State or specific area">
+                    </div>
+                    <div class="form-group">
+                        <label for="leadNotes">Notes</label>
+                        <textarea id="leadNotes" rows="3" placeholder="Initial notes about this lead..."></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary" id="cancelAddLead">Cancel</button>
+                        <button type="submit" class="btn-primary">Add Lead</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Lead Detail Modal -->
+        <div id="leadDetailModal" class="modal">
+            <div class="modal-content lead-detail-modal">
+                <span class="close">&times;</span>
+                <div class="lead-detail-header">
+                    <div class="lead-info">
+                        <h2 id="leadDetailName">Lead Name</h2>
+                        <div class="lead-status-badge" id="leadDetailStatus">Status</div>
+                    </div>
+                    <button class="btn-primary" id="editLeadBtn">
+                        <i class="fas fa-edit"></i> Edit Lead
+                    </button>
+                </div>
+
+                <div class="lead-detail-content">
+                    <div class="lead-details-grid">
+                        <div class="detail-section">
+                            <h3>Contact Information</h3>
+                            <div class="detail-item">
+                                <strong>Email:</strong>
+                                <span id="leadDetailEmail">-</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Phone:</strong>
+                                <span id="leadDetailPhone">-</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Location:</strong>
+                                <span id="leadDetailLocation">-</span>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Lead Information</h3>
+                            <div class="detail-item">
+                                <strong>Source:</strong>
+                                <span id="leadDetailSource">-</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Budget:</strong>
+                                <span id="leadDetailBudget">-</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Added:</strong>
+                                <span id="leadDetailAdded">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3>Notes & Activity</h3>
+                        <div class="lead-notes" id="leadDetailNotes">
+                            No notes available
+                        </div>
+                    </div>
+
+                    <div class="lead-actions">
+                        <button class="btn-secondary" id="updateStatusBtn">Update Status</button>
+                        <button class="btn-secondary" id="addNoteBtn">Add Note</button>
+                        <button class="btn-primary" id="contactLeadBtn">Contact Lead</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Profile Section -->
         <section id="profileSection" class="content-section">
             <div class="container">
@@ -220,7 +757,9 @@
                     <div class="profile-info">
                         <h2 id="profileName">Your Name</h2>
                         <p id="profileRole">Your Role</p>
-                        <button class="btn-primary">Edit Profile</button>
+                        <p id="profileLocation" class="profile-detail"></p>
+                        <p id="profileCompany" class="profile-detail"></p>
+                        <button class="btn-primary" id="editProfileBtn">Edit Profile</button>
                     </div>
                 </div>
                 <div class="profile-content">
@@ -229,14 +768,106 @@
                         <p id="profileAbout">Tell your network about yourself...</p>
                     </div>
                     <div class="profile-section">
-                        <h3>Experience</h3>
-                        <div id="profileExperience">
-                            <p>Add your professional experience...</p>
+                        <h3>Professional Details</h3>
+                        <div class="profile-details-grid">
+                            <div class="detail-item">
+                                <strong>Experience:</strong>
+                                <span id="profileExperienceLevel">Not specified</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Specialties:</strong>
+                                <span id="profileSpecialties">Not specified</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Phone:</strong>
+                                <span id="profilePhone">Not provided</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Website:</strong>
+                                <span id="profileWebsite">Not provided</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-section">
+                        <h3>License Information</h3>
+                        <div id="profileLicenseInfo">
+                            <p>License details will be displayed here after verification.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Open Circle Section -->
+        <section id="opencircleSection" class="content-section">
+            <div class="container">
+                <div class="opencircle-header">
+                    <h2>Open Circle</h2>
+                    <p>Connect with buyers and borrowers looking for professional assistance</p>
+                </div>
+
+                <div class="opencircle-container">
+                    <div class="open-circle">
+                        <div class="circle-border"></div>
+                        <div class="circle-center">
+                            <i class="fas fa-home"></i>
+                            <span>Active Inquiries</span>
+                        </div>
+                        <div class="floating-bubbles" id="floatingBubbles">
+                            <!-- Bubbles will be dynamically generated here -->
+                        </div>
+                    </div>
+
+                    <div class="opencircle-sidebar">
+                        <div class="inquiry-stats">
+                            <h3>Current Activity</h3>
+                            <div class="stat-grid">
+                                <div class="stat-item">
+                                    <span class="stat-number" id="activeInquiries">0</span>
+                                    <span class="stat-label">Active Inquiries</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number" id="availableSlots">8</span>
+                                    <span class="stat-label">Available Slots</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inquiry-rules">
+                            <h4>How It Works</h4>
+                            <ul>
+                                <li>Buyers submit inquiries that appear as floating bubbles</li>
+                                <li>Maximum 2 MLOs and 2 Realtors can respond to each inquiry</li>
+                                <li>Bubbles dissolve after 24 hours or when slots are filled</li>
+                                <li>Click on a bubble to view details and respond</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inquiry Detail Modal -->
+        <div id="inquiryDetailModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="inquiry-detail-header">
+                    <h2>Buyer Inquiry Details</h2>
+                    <div class="inquiry-status" id="inquiryStatus">
+                        <!-- Status will be populated -->
+                    </div>
+                </div>
+                <div class="inquiry-details" id="inquiryDetails">
+                    <!-- Details will be populated -->
+                </div>
+                <div class="inquiry-actions">
+                    <button class="btn-primary" id="respondToInquiry">
+                        <i class="fas fa-paper-plane"></i> Respond to Inquiry
+                    </button>
+                    <button class="btn-secondary" id="closeInquiryDetail">Close</button>
+                </div>
+            </div>
+        </div>
 
         <!-- Messages Section -->
         <section id="messagesSection" class="content-section">
